@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotchWave — Audio Visualizer for Your MacBook Notch</title>
+  <meta name="description" content="Transform your MacBook notch into a real-time audio visualizer. Powered by CoreAudio and Metal.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NotchWave</h1>
+    <p class="tagline">Transform your MacBook notch into a real-time audio visualizer</p>
+  </header>
+
+  <div class="notch-demo" aria-hidden="true">
+    <div class="notch">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="about">
+      <p>NotchWave captures your system audio and renders dynamic pixel-grid visualizations directly in your MacBook's notch. Powered by CoreAudio and Metal for buttery-smooth, real-time FFT analysis.</p>
+
+      <ul class="features">
+        <li>Real-time frequency band visualization</li>
+        <li>Multiple visual modes — sparks, patterns, and more</li>
+        <li>Adjustable sensitivity and color schemes</li>
+        <li>Lightweight menu-bar app — runs unobtrusively</li>
+      </ul>
+
+      <a href="https://github.com/robmintzes/notchwave-site/releases/tag/v1.0.0" class="download-btn">Download for macOS</a>
+
+      <div class="notice">
+        <div class="notice-title">
+          <span class="notice-icon">⚠</span>
+          <h3>Installation note</h3>
+        </div>
+        <p>This app is not signed with an official Apple Developer certificate. macOS may block it from opening. To fix this, open Terminal and run:</p>
+        <pre><code>xattr -cr /path/to/NotchWave.app</code></pre>
+        <p>Then open the app normally.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Rob Mintzes</p>
+  </footer>
+</body>
+</html>
