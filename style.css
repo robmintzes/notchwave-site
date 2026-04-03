@@ -239,6 +239,17 @@ main {
   gap: 0.65rem;
 }
 
+.notice.notice-info {
+  border-color: rgba(167, 139, 250, 0.15);
+  border-left-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.notice.notice-info .notice-icon,
+.notice.notice-info h3 {
+  color: var(--accent);
+}
+
 .notice-title {
   display: flex;
   align-items: center;
