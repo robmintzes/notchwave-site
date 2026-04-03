@@ -43,14 +43,35 @@
       <p>NotchWave captures your system audio and renders real-time frequency visualizations in your menu bar, flanking the notch so the audio appears to emanate from it. The overlay is fully transparent to clicks — your menu bar stays completely accessible. Powered by CoreAudio and Metal.</p>
 
       <ul class="features">
-        <li>Real-time frequency band visualization</li>
-        <li>Multiple visual modes — sparks, patterns, and more</li>
-        <li>Adjustable sensitivity and color schemes</li>
+        <li>Real-time frequency band visualization via CoreAudio process tap</li>
+        <li>Multiple visual modes — sparks, solid, fade — and nine segment shapes</li>
+        <li>Stereo mode — left dots track the left channel, right dots track the right</li>
+        <li>Multi-monitor — one window per screen, adapts on connect/disconnect</li>
+        <li>Adjustable sensitivity, color, bloom, grid density, and blend math</li>
         <li>Lightweight menu-bar app — runs unobtrusively</li>
         <li>Audio is never recorded or stored — processed in real time only</li>
       </ul>
 
       <a href="https://github.com/robmintzes/notchwave-site/releases/tag/v1.0.0" class="download-btn">Download for macOS</a>
+
+      <div class="changelog">
+        <h3>Changelog</h3>
+        <div class="release">
+          <span class="version">v1.1</span>
+          <ul>
+            <li>Stereo mode — independent left/right FFT chains reveal panning and stereo width</li>
+            <li>Multi-monitor support — visualizer appears on every connected display</li>
+            <li>Non-notch screens spread dots symmetrically from the menu-bar center</li>
+            <li>Windows rebuild automatically on screen connect/disconnect</li>
+          </ul>
+        </div>
+        <div class="release">
+          <span class="version">v1.0</span>
+          <ul>
+            <li>Initial release — notch-flanking dot matrix, CoreAudio tap, Metal renderer</li>
+          </ul>
+        </div>
+      </div>
 
       <div class="notice">
         <div class="notice-title">
